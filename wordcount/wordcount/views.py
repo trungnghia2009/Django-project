@@ -4,7 +4,10 @@ from django.shortcuts import render
 def homepage(request):
     return render(request, 'home.html')
 
-def count(request):
+def aboutpage(request):
+    return render(request, 'about.html')
+
+def countpage(request):
     fulltext = request.GET['fulltext']
     wordlist = fulltext.split()
     wordDictionary = {}
