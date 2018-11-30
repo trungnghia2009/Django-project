@@ -1,0 +1,15 @@
+Install Python3x
+pip3 install django==2.0.2 (need to install pip before executing this)
+django-admin startproject <project-name>
+
+
+---Install virtualenv and start
+pip3 install virtualenv
+virtualenv <project-virtual-name> -->create virtualenv floder
+
+.\myvenv\Scripts\activate (activate env, using cmd) -- on linux using <source /path/to/ENV/bin/activate>
+deactivate --> deactivate virtualenv
+
+https://techtalk.vn/gitignore-la-gi-no-co-quan-trong-khong.html --->gitignore
+
+
