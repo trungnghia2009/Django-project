@@ -13,3 +13,4 @@ deactivate --> deactivate virtualenv
 https://techtalk.vn/gitignore-la-gi-no-co-quan-trong-khong.html --->gitignore
 
 
+---
