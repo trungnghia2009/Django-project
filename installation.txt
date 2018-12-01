@@ -9,8 +9,28 @@ virtualenv <project-virtual-name> -->create virtualenv floder
 
 .\myvenv\Scripts\activate (activate env, using cmd) -- on linux using <source /path/to/ENV/bin/activate>
 deactivate --> deactivate virtualenv
+pip install django==2.0.2
+pip install Pillow
 
 https://techtalk.vn/gitignore-la-gi-no-co-quan-trong-khong.html --->gitignore
 
 
----
+---Create App
+python manage.py startapp <App-name>
+python manage.py migrate --> update
+python manage.py makemigrations --> add models
+
+-models.py --> "django model filed" for more details
+
+
+
+---Create super user
+python manage.py createsuperuser
+user/email/pass: nghia/nghia@zappycode.com/A123456a
+
+--install postgre SQL
+1. Download exe file in main page
+2. Copy exe file to C:
+3. Open cmd "as admin"
+4. run command " C:\>xxxx.exe --install_runtimes 0"
+5. pass/default port: A123456a/5432
