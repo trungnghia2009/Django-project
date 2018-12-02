@@ -34,3 +34,4 @@ user/email/pass: nghia/nghia@zappycode.com/A123456a
 3. Open cmd "as admin"
 4. run command " C:\>xxxx.exe --install_runtimes 0"
 5. pass/default port: A123456a/5432
+
