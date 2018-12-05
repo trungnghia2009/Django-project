@@ -23,16 +23,17 @@
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Nghia Tran</a>
+            <a class="navbar-brand" href="{% url 'home' %}">Nghia Tran</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="">Admin</a>
                     <a class="nav-item nav-link" href="#">Facebook</a>
                     <a class="nav-item nav-link" href="#">Resume</a>
-                    <a class="nav-item nav-link" href="">Blog</a>
+                    <a class="nav-item nav-link" href="{% url 'allblogs' %}">Blog</a>
                 </div>
             </div>
         </nav>

@@ -23,7 +23,7 @@
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Nghia Tran</a>
+            <a class="navbar-brand" href="{% url 'home' %}">Nghia Tran</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -45,7 +45,7 @@
             <h2>Latest Blogs</h2>
             <hr />
             {% for blog in blogs.all %}
-            <a href=""><h3>{{ blog.title }}</h3></a>
+            <a href="{% url 'detail' blog.id %}"><h3>{{ blog.title }}</h3></a>
             <p>{{ blog.pub_date_pretty }}</p>
             <img class="img-fluid" src="{{ blog.image.url }}" height="200" width="300" /> <!-- img-fluid: auto scale -->
             <p>{{ blog.summary }}</p>
