@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Album example for Bootstrap</title>
+    <title>HomePage</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
@@ -30,7 +30,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="">Admin</a>
+                    <a class="nav-item nav-link" href="{% static 'MyTeam.jpg' %}">Admin</a>
                     <a class="nav-item nav-link" href="https://www.facebook.com/profile.php?id=100008853853600">Facebook</a>
                     <a class="nav-item nav-link" href="{% static 'resume.pdf' %}">Resume</a>
                     <a class="nav-item nav-link" href="{% url 'allblogs' %}">Blog</a>
@@ -48,7 +48,7 @@
                 <p>
                     <a href="mailto:nghia@zappycode.com" class="btn btn-primary my-2">Email me</a>
                 </p>
-                <img src="{% static 'Kien.jpg' %}" width="300" />
+                <img src="{% static 'Kratos.jpg' %}" width="300" />
             </div>
         </section>
 
@@ -60,7 +60,7 @@
                     {% for job in jobs.all %}
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img class="card-img-top"  alt="Card image cap" src="{{ job.image.url }}">
+                            <a href="https://www.google.com"><img class="card-img-top"  alt="Card image cap" src="{{ job.image.url }}"></a>
                                 
                             <div class="card-body">
                                 <p class="card-text">{{ job.summary }}</p>
