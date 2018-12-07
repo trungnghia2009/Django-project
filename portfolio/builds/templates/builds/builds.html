@@ -43,23 +43,17 @@
 
         <section class="jumbotron text-center">
             <div class="container">
-                <!-- <h1 class="jumbotron-heading">Build Download</h1> -->
+                <h1 class="jumbotron-heading pb-5">Build Download</h1>
                 <img class="img-fluid" src="{% static 'logo_build.png' %}" />
                 <p class="lead text-muted pt-2">Download build for 4 clients</p>
-            </div>
-        </section>
-
-        <div class="album py-5 bg-light">
-            <div class="container">
-
                 <div class="column">
                     {% for build in builds.all %}
-                    <p><a href="{{ build.upload.url }}">{{ forloop.counter }}. {{ build.title }}</a></p>
+                    <p class="text-primary"><a href="{{ build.upload.url }}">{{ build.title }}</a></p>
                     {% endfor %}
 
                 </div>
             </div>
-        </div>
+        </section>
 
     </main>
 
